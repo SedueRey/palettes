@@ -1,0 +1,117 @@
+// Defined palettes. Tiny CSS for them */ 
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+
+// Set the global compass vars.
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: false;
+$legacy-support-for-mozilla: false;
+// Import the normalize plugin
+@import "normalize";
+
+$default-text-shadow-color: rgba(white, 0.5);
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
+$default-text-shadow-h-offset: 1px;
+
+@import "compass/css3";
+
+
+@import "law/variables";
+
+@mixin color-palette-six($color1, $color2, $color3, $color4, $color5, $color6) {
+  	li{
+  		width: 8rem;
+  		padding: 0.5rem;
+  		text-align: center;
+  		&:nth-child(1){
+  			background-color: $color1;
+  			&:before{
+  				content: "#{$color1}";
+  				font-weight: bold;
+  				@include text-shadow;
+  			}
+  		}
+  		&:nth-child(2){
+  			background-color: $color2;
+  			&:before{
+	  			content: "#{$color2}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(3){
+  			background-color: $color3;
+  			&:before{
+	  			content: "#{$color3}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(4){
+  			background-color: $color4;
+  			&:before{
+	  			content: "#{$color4}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(5){
+  			background-color: $color5;
+  			&:before{
+	  			content: "#{$color5}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(6){
+  			background-color: $color6;
+  			&:before{
+	  			content: "#{$color6}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  	}
+}
+
+html{
+	background: #F4F4F4;
+	color: #212121;
+	font: 0.95em "Open Sans", sans-serif;
+}
+
+#container{
+	background: #FFFFFF;
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 0.5rem 1rem;
+}
+
+.palette{
+	margin: 0 0 1rem 0;
+	ul{
+		list-style: none;
+		margin:  0 0 0 0;
+		padding: 0 0 0 0;
+		li{
+			display: inline-block;
+		}
+	}
+	&.law{
+		ul{
+			&.six{
+				@include color-palette-six( $law-link-color, $law-main-color, $law-bg-color, $law-text-color, $law-secondary-bg-color, $law-secondary-color);
+			}
+			&.darkensix{
+				font-size: 0.85rem;
+				@include color-palette-six( darken($law-link-color, 10%), darken($law-main-color, 10%), darken($law-bg-color, 10%), darken($law-text-color, 10%), darken($law-secondary-bg-color, 10%), darken($law-secondary-color, 10%) );
+			}
+			&.lightensix{
+				font-size: 0.85rem;
+				@include color-palette-six( lighten($law-link-color, 10%), lighten($law-main-color, 10%), lighten($law-bg-color, 10%), lighten($law-text-color, 10%), lighten($law-secondary-bg-color, 10%), lighten($law-secondary-color, 10%) );
+			}
+		}
+	}
+}
