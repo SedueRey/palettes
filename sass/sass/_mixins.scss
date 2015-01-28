@@ -1,0 +1,103 @@
+@mixin color-palette-six($color1, $color2, $color3, $color4, $color5, $color6) {
+  	li{
+  		width: 8rem;
+  		padding: 0.5rem;
+  		text-align: center;
+  		&:nth-child(1){
+  			background-color: $color1;
+  			&:before{
+  				content: "#{$color1}";
+  				font-weight: bold;
+  				@include text-shadow;
+  			}
+  		}
+  		&:nth-child(2){
+  			background-color: $color2;
+  			&:before{
+	  			content: "#{$color2}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(3){
+  			background-color: $color3;
+  			&:before{
+	  			content: "#{$color3}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(4){
+  			background-color: $color4;
+  			&:before{
+	  			content: "#{$color4}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(5){
+  			background-color: $color5;
+  			&:before{
+	  			content: "#{$color5}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(6){
+  			background-color: $color6;
+  			&:before{
+	  			content: "#{$color6}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  	}
+}
+
+@mixin color-palette-five($color1, $color2, $color3, $color4, $color5) {
+  	li{
+  		width: 9.8rem;
+  		padding: 0.5rem;
+  		text-align: center;
+  		&:nth-child(1){
+  			background-color: $color1;
+  			&:before{
+  				content: "#{$color1}";
+  				font-weight: bold;
+  				@include text-shadow;
+  			}
+  		}
+  		&:nth-child(2){
+  			background-color: $color2;
+  			&:before{
+	  			content: "#{$color2}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(3){
+  			background-color: $color3;
+  			&:before{
+	  			content: "#{$color3}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(4){
+  			background-color: $color4;
+  			&:before{
+	  			content: "#{$color4}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  		&:nth-child(5){
+  			background-color: $color5;
+  			&:before{
+	  			content: "#{$color5}";
+	  			font-weight: bold;
+  				@include text-shadow;
+	  		}
+  		}
+  	}
+}

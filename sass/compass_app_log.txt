@@ -78,3 +78,15 @@
 2015-01-21 19:48:59 overwrite stylesheets/screen.css 
 2015-01-21 19:49:19 overwrite stylesheets/screen.css 
 2015-01-21 19:49:30 overwrite stylesheets/screen.css 
+2015-01-28 17:58:55 identical stylesheets/screen.css 
+2015-01-28 17:59:28     error sass/screen.scss (Line 169: Undefined variable: "$winter-secondary-color".)
+2015-01-28 17:59:28 overwrite stylesheets/screen.css 
+2015-01-28 17:59:55     error sass/screen.scss (Line 173: Mixin color-palette-six is missing argument $color6.)
+2015-01-28 17:59:55 overwrite stylesheets/screen.css 
+2015-01-28 18:00:06 overwrite stylesheets/screen.css 
+2015-01-28 18:03:21 overwrite stylesheets/screen.css 
+2015-01-28 18:03:38 overwrite stylesheets/screen.css 
+2015-01-28 18:04:12 identical stylesheets/screen.css 
+2015-01-28 18:04:20 overwrite stylesheets/screen.css 
+2015-01-28 18:04:37 overwrite stylesheets/screen.css 
+2015-01-28 18:04:58 overwrite stylesheets/screen.css 
