@@ -50,6 +50,7 @@ html{
 		list-style: none;
 		margin:  0 0 0 0;
 		padding: 0 0 0 0;
+		overflow: hidden;
 		li{
 			display: inline-block;
 		}
@@ -61,10 +62,12 @@ html{
 			}
 			&.darkensix{
 				font-size: 0.85rem;
+				height: 10px;
 				@include color-palette-six( darken($law-link-color, 10%), darken($law-main-color, 10%), darken($law-bg-color, 10%), darken($law-text-color, 10%), darken($law-secondary-bg-color, 10%), darken($law-secondary-color, 10%) );
 			}
 			&.lightensix{
 				font-size: 0.85rem;
+				height: 10px;
 				@include color-palette-six( lighten($law-link-color, 10%), lighten($law-main-color, 10%), lighten($law-bg-color, 10%), lighten($law-text-color, 10%), lighten($law-secondary-bg-color, 10%), lighten($law-secondary-color, 10%) );
 			}
 		}
@@ -76,10 +79,12 @@ html{
 			}
 			&.darkenfive{
 				font-size: 0.85rem;
+				height: 10px;
 				@include color-palette-five( darken($winter-link-color, 10%), darken($winter-main-color, 10%), darken($winter-bg-color, 10%), darken($winter-text-color, 10%), darken($winter-secondary-bg-color, 10%));
 			}
 			&.lightenfive{
 				font-size: 0.85rem;
+				height: 10px;
 				@include color-palette-five( lighten($winter-link-color, 10%), lighten($winter-main-color, 10%), lighten($winter-bg-color, 10%), lighten($winter-text-color, 10%), lighten($winter-secondary-bg-color, 10%) );
 			}
 		}
